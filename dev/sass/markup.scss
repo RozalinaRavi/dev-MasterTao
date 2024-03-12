@@ -1,0 +1,15 @@
+.colors {
+	width: 250px;
+	height: 100px;
+	background-color: aqua;
+	p {
+		font-weight: 600;
+		color: #180054;
+	}
+}
+.primary-button {
+	display: inline-block;
+	background-color: $primary-color;
+	border: 1px solid white;
+	border-radius: 90deg;
+}
