@@ -1,4 +1,69 @@
 @media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1170px;
+        padding-right: $container-mobile-padding;
+        padding-left: $container-mobile-padding;
+    }
+
+    .header {
+        padding: 18px 0 39px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 72px;
+            background-color: #282B38;
+            z-index: 2;
+        }
+    }
+    
+    .header-logo-img {
+        max-width: 100px;
+    }
+    .header-nav {
+        flex-direction: column; 
+        background-color: $bg-secondary;
+        position: absolute;
+        top: -510px;
+        left: 0;
+        z-index: 1;
+        padding: 28px 0 60px 0;
+        transition: .7s;
+
+        &.show {
+            top: 72px;
+        }
+    &__list {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+}
+
+.header-list-link {
+    font-size: 19px;
+    line-height: 166%;
+    padding: 0;
+}
+
+.btn-primary {
+padding: 22px 23px;
+max-width: 295px;
+font-size: 14px;
+justify-content: center;
+margin: 0 auto;
+}
+
+.hamburger {
+    z-index: 2;
+}
+
+.header-logo-link {
+    z-index: 2;
+}
 }
 
 
