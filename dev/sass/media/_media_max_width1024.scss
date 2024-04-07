@@ -1,10 +1,47 @@
 @media screen and (max-width: 1024px) {
-    .container {
-        max-width: 1170px;
-        padding-right: $container-mobile-padding;
-        padding-left: $container-mobile-padding;
+    
+    h1,
+    .h1 {
+        font-size: 32px;
     }
-
+    h2,
+    .h2 {
+        font-size: 30px;
+    }
+    h3,
+    .h3 {
+        font-size: 24px;
+    }
+    
+    h4,
+    .h4 {
+        font-size: 18px;
+    }
+    
+    h5,
+    .h5 {
+        font-size: 16px;
+    }
+    
+    h6,
+    .h6 {
+        font-size: 14px;
+    }
+    
+    .banner-title,
+    .banner-subtitle {
+        max-width: 260px;
+    }
+    
+    
+        .container {
+            padding-right: $container-mobile-padding;
+            padding-left: $container-mobile-padding;
+        }
+        .container-xxl {
+            padding: 0;
+        }
+  
     .header {
         padding: 18px 0 39px;
 
@@ -32,6 +69,7 @@
         z-index: 1;
         padding: 28px 0 60px 0;
         transition: .7s;
+        box-shadow: 14px 22px 40px 0 #20254547;
 
         &.show {
             top: 72px;
@@ -66,4 +104,44 @@ margin: 0 auto;
 }
 }
 
+
+.first-screen {
+    .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 26px 40px;
+        position: relative;
+        z-index: 1;
+    }
+
+   
+}
+
+.slick-track::before {
+    contain: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #04091199;
+}
+.banner-item {
+    border-radius: 0;
+}
+
+.banner-title,
+.banner-subtitle {
+    max-width: 260px;
+}
+
+.banner-title {
+    margin-bottom: 8px;
+}
+
+.banner-subtitle {
+    margin-bottom: 22px;
+}
 

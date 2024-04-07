@@ -5,3 +5,10 @@
     hamburger.classList.toggle('is-active')
     headerNav.classList.toggle('show')
   })
+
+  $('#first-screen-slider').slick({
+     
+    dots: true,
+    appendArrows: $('.first-screen-arrows'),
+  });
+   
