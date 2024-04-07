@@ -10,5 +10,12 @@
      
     dots: true,
     appendArrows: $('.first-screen-arrows'),
+  
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+          arrows: false,
+      }
+  }, ]
   });
-   
+  
