@@ -369,6 +369,46 @@ ul {
 	width: 0px;
 }
 
+.slick-track {
+	display: flex;
+}
+
+
+
+
+
+ul.slick-dots {
+	padding: 0;
+	margin: 0;
+
+	> li {
+		margin: 0 13px;
+		height: 8px;
+		font-size: 0;
+
+		&:before {
+			display: none;
+		}
+
+		&.slick-active {
+			button {
+				background-color: #fff;
+			}
+		}
+	}
+
+	button {
+		font-size: 0;
+		padding: 0px;
+		border-radius: 50%;
+		opacity: 0.9;
+		border: 2px solid #ffffff;
+		width: 8px;
+		height: 8px;
+		background: transparent;
+		outline: none;
+	}
+}
 .page-home {
 	section {
 		margin-top: 0;
@@ -409,18 +449,6 @@ ul {
 	margin-bottom: 50px;
 	position: relative;
 
-	h2 {
-		line-height: 124.5%;
-		text-transform: uppercase;
-		margin-bottom: 6px;
-	}
-
-	h3 {
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 1.25;
-	}
-
 	&:after {
 		content: "";
 		position: absolute;
@@ -432,10 +460,39 @@ ul {
 		background-color: $color-secondary;
 	}
 
+
+	h2 {
+		line-height: 124.5%;
+		text-transform: uppercase;
+		margin-bottom: 6px;
+	}
+
+
+	h3 {
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 1.25;
+	}
+
+
+	
+
 	/*type 2*/
 	&.col-lg-7 {
 		margin-bottom: 35px;
 		text-align: left;
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: calc(100% - 2px);
+			transform: translate(-50%, 0);
+			width: 85px;
+			height: 2px;
+			background-color: $color-secondary;
+		}
+	
 
 		h2 {
 			&:after {
@@ -448,13 +505,18 @@ ul {
 			}
 		}
 
+		
 		&.template-title {
-			&:after {
-				display: none;
-			}
-		}
+            &:after {
+                display: none;
+            }
+        }
 	}
 }
+
+
+
+
 
 .input-box {
 	label {
