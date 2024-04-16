@@ -165,8 +165,7 @@ section.first-screen {
     }
 }
 
-.calculation-decoration,
-.template-title.col-lg-7 h2:after {
+.calculation-decoration {
     display: none;
 }
 
@@ -177,13 +176,13 @@ section.first-screen {
     }
 } 
 
-.template-title {
-            
+     /*type 2*/ 
+.template-title {        
     &.col-lg-7 {
         margin-bottom: 56px;
         
         &:after {
-          display: inline-block;
+            display: inline-block;
         }
 
         h2 {
@@ -200,5 +199,6 @@ section.first-screen {
 .mobile-center {
     text-align: center;
 }
+
 
 }

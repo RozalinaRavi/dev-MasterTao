@@ -1,3 +1,18 @@
+$('select').niceSelect();
+
+$('#first-screen-slider').slick({
+     
+  dots: true,
+  appendArrows: $('.first-screen-arrows'),
+
+  responsive: [{
+    breakpoint: 1024,
+    settings: {
+        arrows: false,
+    }
+}, ]
+});
+  
   const hamburger = document.querySelector('.hamburger')
   const headerNav = document.querySelector('.header-nav')
   const fileInput = document.querySelector('#calculation-file');
@@ -12,29 +27,10 @@
     fileName.innerHTML = fileInput.files[0].name;
 });
 
-  $('#first-screen-slider').slick({
-     
-    dots: true,
-    appendArrows: $('.first-screen-arrows'),
-  
-    responsive: [{
-      breakpoint: 1024,
-      settings: {
-          arrows: false,
-      }
-  }, ]
-  });
-  
-
   const controlledField = document.querySelectorAll('[type="checkbox"]')
   const fileField = document.querySelectorAll('[type=file')
   const formBtns = document.querySelectorAll('form .col button')
  
-
-
-  $('select').niceSelect();
-
-
 
 
   const addParentClass = (array, parent, className) => {
