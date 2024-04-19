@@ -12,6 +12,14 @@ $('#first-screen-slider').slick({
     }
 }, ]
 });
+
+
+$('.slider-template').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  arrows: false
+});
   
   const hamburger = document.querySelector('.hamburger')
   const headerNav = document.querySelector('.header-nav')

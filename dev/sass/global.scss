@@ -449,7 +449,7 @@ ul.slick-dots {
 	margin-bottom: 50px;
 	position: relative;
 
-	&:after {
+	&::after {
 		content: "";
 		position: absolute;
 		left: 50%;
@@ -481,7 +481,12 @@ ul.slick-dots {
 	&.col-lg-7 {
 		margin-bottom: 35px;
 		text-align: left;
-	
+
+		&::after {
+			display: none;
+		}
+
+
 		h2 {
 			&:after {
 				content: "";
@@ -493,12 +498,6 @@ ul.slick-dots {
 			}
 		}
 
-		
-		&.template-title {
-            &:before {
-                display: none;
-            }
-        }
 	}
 }
 
