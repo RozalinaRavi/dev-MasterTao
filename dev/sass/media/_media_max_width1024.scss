@@ -199,4 +199,32 @@ section.first-screen {
 .mobile-center {
     text-align: center;
 }
+
+.slider-template {
+    .slick-list {
+        margin-bottom: 32px;
+    }
+
+    .slick-slide {
+        padding: 0;
+    }
+
+    .template-card {
+        padding: 0 23px 27px;
+        .img-box {
+            margin: 0 -23px 29px;
+            .img {
+                height: 213px;
+            }
+        }
+    }
+
+    .template-card-row {
+        gap: 13px;
+        .btn {
+            padding: 13px 5px;
+        }
+    }
+}
+
 }

@@ -18,7 +18,21 @@ $('.slider-template').slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 3,
-  arrows: false
+  //arrows: false
+  responsive: [{
+    breakpoint: 1400,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+  {   breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true,
+      }
+  },
+]
 });
   
   const hamburger = document.querySelector('.hamburger')
