@@ -27,6 +27,7 @@ $('.slider-template').slick({
   },
   {   breakpoint: 1024,
       settings: {
+        slidesToScroll: 1,
         slidesToShow: 1,
         arrows: false,
         dots: true,

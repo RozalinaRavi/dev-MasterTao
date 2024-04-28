@@ -4,26 +4,42 @@
     padding: 0 20px 27px;
     max-width: 360px;
     min-height: 481px;
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
    
    .img-box {
-    margin: 0 -20px 27px;
-    border-radius: 19px 19px 0 0;
-    height: 229px;
-    width: 100%;
-    object-fit: contain;
+    margin: 0 -20px 29px;
+    img {
+        border-radius: 19px 19px 0 0;
+        height: 229px;
+        width: 100%;
+        object-fit: contain;
+    }
     
    }
+
 }
 
 .slider-template {
     .template-card {
         margin: 0 auto;
+        margin-bottom: 32px;
     }
+    
+    
+.slick-dots {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        justify-content: center;
+    }
+
     .slick-arrow {
         position: absolute;
         right: -100px;
-        top: calc(50%-10px);
+        top: calc(50% - 10px);
         transform: translate(0, -50%);
         z-index: 1;
         &.slick-prev {
@@ -74,7 +90,8 @@
 
     .btn {
         justify-content: center;
-        width: 100%;
+        width: 50%;
+        max-width: 153px;
         padding: 13px 10px;
     }
 }
