@@ -1,0 +1,15 @@
+.about-row {
+    display: flex;
+}
+
+.about-decoration {
+    margin: -176px 0 0 -29px;
+    height: auto;
+    img {
+        max-width: calc(100% + 46px);
+    }
+}
+
+.question-accordion {
+    margin: 60px;
+}
