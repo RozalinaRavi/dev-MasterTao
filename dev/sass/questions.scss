@@ -1,16 +1,18 @@
 .questions .accordion-header {
-    border-radius: 10px;
     overflow: hidden;
-    padding: 6.5px 14px;
   }
 
  .accordion-item {
     margin-bottom: 30px;
+    border: 1px solid $bg-secondary;
     border-radius: 10px;
-    border: none;
-    box-shadow: 5px 15px 40px 0 #0b186152;
     max-width: 716px;
     height: 100%;
+  }
+
+  .accordion-body {
+    border-radius: 10px;
+    padding: 21px ;
   }
   
   .accordion-item:last-child {
@@ -19,16 +21,20 @@
 
   .accordion-button {
     background-color: $bg-primary;
+    padding: 21px 34px 21px;
     font-weight: 700;
     font-size: 18px;
     line-height: 125%;
-    color: #fff
+    color: #fff;
+    border: 1px solid $bg-secondary;
+    border-radius: 10px;
   }
 
   .accordion-button:not(.collapsed) {
     color: $bg-primary;
     background-color: #fff;
     box-shadow: none;
+    border: none;
   }
 
 .accordion-button:focus-visible,
@@ -47,11 +53,6 @@
   background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_5858_78)'%3E%3Cpath d='M13.5 26.5781C6.27539 26.5781 0.421874 20.7246 0.421874 13.5C0.421875 6.27539 6.27539 0.421875 13.5 0.421876C20.7246 0.421876 26.5781 6.27539 26.5781 13.5C26.5781 20.7246 20.7246 26.5781 13.5 26.5781ZM24.8906 13.5C24.8906 7.24043 19.8229 2.10938 13.5 2.10938C7.24043 2.10938 2.10937 7.17715 2.10937 13.5C2.10937 19.7596 7.17715 24.8906 13.5 24.8906C19.7596 24.8906 24.8906 19.8229 24.8906 13.5ZM20.0127 12.8408L13.9482 6.77109C13.7004 6.52324 13.2996 6.52324 13.0518 6.77109L6.9873 12.8408C6.73945 13.0887 6.73945 13.4895 6.9873 13.7373L7.35117 14.1012C7.59902 14.349 8.01035 14.349 8.25293 14.0906L12.6035 9.58184L12.6035 19.6172C12.6035 19.9652 12.8883 20.25 13.2363 20.25L13.7637 20.25C14.1117 20.25 14.3965 19.9652 14.3965 19.6172L14.3965 9.58184L18.7471 14.0959C18.9949 14.349 19.401 14.3543 19.6488 14.1064L20.0127 13.7426C20.2605 13.4895 20.2605 13.0887 20.0127 12.8408Z' fill='%23E58D35'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5858_78'%3E%3Crect width='27' height='27' fill='white' transform='matrix(-4.37114e-08 1 1 4.37114e-08 0 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
   transform: rotate(1turn);
 }
-
-.accordion-header {
-  background-color: red;
- }
-
 
  .question-form {
   max-width: 390px;
@@ -76,7 +77,7 @@
     margin-bottom: 14px;
   }
 
-   #question {
+   input:last-of-type {
     min-height: 70px;
     margin-bottom: 0px;
     margin-bottom: 26px;
