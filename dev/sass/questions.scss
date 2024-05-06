@@ -51,3 +51,39 @@
 .accordion-header {
   background-color: red;
  }
+
+
+ .question-form {
+  max-width: 390px;
+  background: $bg-secondary;
+  border-radius: 20px;
+  padding: 50px 48px 61px;
+  margin-bottom: 100px;
+
+    &__header {
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 126%;
+  }
+
+  input {
+    min-width: 310px;
+    margin-bottom: 14px;
+  }
+
+   #question {
+    min-height: 70px;
+    margin-bottom: 0px;
+    margin-bottom: 26px;
+   }
+
+   .btn {
+    min-width: 310px;
+    width: 100%;
+   }
+}
