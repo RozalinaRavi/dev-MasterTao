@@ -50,13 +50,6 @@ $section-margin: 60px;
 		z-index: -1;
 	}
 
-	&:nth-child(odd) {
-		.template-title {
-			&:after {
-				background-color: $color-primary;
-			}
-		}
-	}
 }
 
 @mixin default-bg {

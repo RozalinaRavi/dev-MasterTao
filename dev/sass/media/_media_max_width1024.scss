@@ -236,4 +236,28 @@ section.first-screen {
         object-position: initial;
     }
 }
+
+.about-row {
+    flex-direction: column;
+
+ 
+}
+
+.about-decoration {
+    margin-top: 35px;
+    justify-content: center;
+    img {
+       justify-content: baseline;
+    }
+}
+
+.question-form {
+    margin-top: 28px;
+    width: 100%;
+}
+
+.registration-row {
+    display: flex;
+    flex-direction: column;
+}
 }

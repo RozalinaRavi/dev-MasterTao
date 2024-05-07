@@ -2,16 +2,18 @@
     overflow: hidden;
   }
 
- .accordion-item {
+ .accordion .accordion-item {
     margin-bottom: 30px;
     border: 1px solid $bg-secondary;
     border-radius: 10px;
     max-width: 716px;
     height: 100%;
+    background: transparent;
   }
 
   .accordion-body {
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
     padding: 21px ;
   }
   
@@ -26,7 +28,6 @@
     font-size: 18px;
     line-height: 125%;
     color: #fff;
-    border: 1px solid $bg-secondary;
     border-radius: 10px;
   }
 
@@ -35,6 +36,7 @@
     background-color: #fff;
     box-shadow: none;
     border: none;
+    border-radius: 10px 10px 0 0;
   }
 
 .accordion-button:focus-visible,

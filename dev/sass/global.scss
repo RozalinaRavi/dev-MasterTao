@@ -544,3 +544,11 @@ ul.slick-dots {
 .has-bg {
 	@include default-bg-lg;
 }
+
+section:nth-child(odd) {
+	.template-title {
+		&:after {
+			background-color: $color-primary;
+		}
+	}
+}
