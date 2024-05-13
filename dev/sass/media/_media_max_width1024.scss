@@ -256,8 +256,18 @@ section.first-screen {
     width: 100%;
 }
 
-.registration-row {
-    display: flex;
+.registration-row-1:nth-child(2) {
+   flex-direction: column-reverse;
+}
+.registration-row-2 {
     flex-direction: column;
+}
+.footer-nav {
+    display: none;
+}
+.main-info {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 44px;
 }
 }

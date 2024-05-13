@@ -1,0 +1,37 @@
+footer .footer-logo-img {
+    margin-bottom: 28px;
+}
+.main-info {
+    justify-content: flex-end;
+}
+.social-link {
+    color: #fff;
+}
+.no-decor {
+    text-decoration: none;
+}
+.social-media-nav {
+    justify-content: flex-start;
+}
+.footer-row {
+    display: flex;
+}
+.footer-nav__list-item {
+    list-style: none;
+}
+.footer-nav-link {
+    color: #85899c;
+}
+.footer .container {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1140px;
+        height: 2px;
+        top: -40px;
+        left: 0;
+        background-color: $color-primary;
+    }
+}

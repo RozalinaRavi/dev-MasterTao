@@ -546,9 +546,12 @@ ul.slick-dots {
 }
 
 section:nth-child(odd) {
-	.template-title {
-		&:after {
-			background-color: $color-primary;
+		.template-title {
+			h2::after {
+				background-color: $color-primary;
+			}
+			&:after {
+				background-color: $color-primary;
+			}
 		}
 	}
-}
