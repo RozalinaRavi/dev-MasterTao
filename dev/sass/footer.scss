@@ -1,8 +1,13 @@
 footer .footer-logo-img {
     margin-bottom: 28px;
+    margin-left: 30px;
+}
+.social-media-nav {
+    margin-left: 30px;
 }
 .main-info {
-    justify-content: flex-end;
+    font-size: 14px;
+    line-height: 162%;
 }
 .social-link {
     color: #fff;
@@ -13,25 +18,33 @@ footer .footer-logo-img {
 .social-media-nav {
     justify-content: flex-start;
 }
+
+.social-link-img {
+    width: 33px;
+    height: 34px;
+}
 .footer-row {
     display: flex;
+    gap: 48px;
 }
 .footer-nav__list-item {
     list-style: none;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 .footer-nav-link {
     color: #85899c;
 }
 .footer .container {
+    margin-bottom: 59px;
     position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        width: 1140px;
-        height: 2px;
-        top: -40px;
-        left: 0;
-        background-color: $color-primary;
-    }
+     &::after {
+         content: "";
+         position: absolute;
+         width: 1140px;
+         height: 2px;
+         top: -40px;
+         left: 0;
+         background-color: $color-primary;
+}
 }
