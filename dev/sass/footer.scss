@@ -5,6 +5,7 @@ footer .footer-logo-img {
 .main-info {
     font-size: 14px;
     line-height: 162%;
+    margin: 0 auto;
 }
 .main-info__list {
    padding: 0;
@@ -22,8 +23,10 @@ footer .footer-logo-img {
 }
 .footer-row {
     display: flex;
-    gap: 70px;
     justify-content: center;
+}
+.footer-nav__list {
+    padding: 0;
 }
 .footer-nav__list-item {
     list-style: none;
@@ -42,7 +45,14 @@ footer .footer-logo-img {
          width: 1140px;
          height: 2px;
          top: -40px;
-         left: 0;
+         left: 110px;
          background-color: $color-primary;
 }
+}
+
+.footer-nav__container {
+    display: flex;
+    width: 100%;
+    max-width: 706px;
+    justify-content: space-between;
 }
