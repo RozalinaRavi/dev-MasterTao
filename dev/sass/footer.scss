@@ -1,22 +1,19 @@
 footer .footer-logo-img {
     margin-bottom: 28px;
-    margin-left: 30px;
 }
-.social-media-nav {
-    margin-left: 30px;
-}
+
 .main-info {
     font-size: 14px;
     line-height: 162%;
+}
+.main-info__list {
+   padding: 0;
 }
 .social-link {
     color: #fff;
 }
 .no-decor {
     text-decoration: none;
-}
-.social-media-nav {
-    justify-content: flex-start;
 }
 
 .social-link-img {
@@ -25,7 +22,8 @@ footer .footer-logo-img {
 }
 .footer-row {
     display: flex;
-    gap: 48px;
+    gap: 70px;
+    justify-content: center;
 }
 .footer-nav__list-item {
     list-style: none;
