@@ -35,6 +35,8 @@ $('.slider-template').slick({
   },
 ]
 });
+
+
   
   const hamburger = document.querySelector('.hamburger')
   const headerNav = document.querySelector('.header-nav')
@@ -66,3 +68,27 @@ $('.slider-template').slick({
   addParentClass(controlledField, '.col', 'controlled-col')
   addParentClass(fileField, '.input-wrapper', 'file-wrapper')
   addParentClass(formBtns, '.col', 'mobile-center')
+
+  
+  function mobileOnlySlider() {
+    $(document).ready(function(){
+        $('.slider-advantages').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+                responsive: [{
+                    breakpoint: 568,
+                    settings: {
+                        slidesToShow: 1,
+                        settings:"unslick"
+                }
+            }]
+        });
+    });
+}
+
+if(window.innerWidth < 768) {
+  mobileOnlySlider();
+}
+
