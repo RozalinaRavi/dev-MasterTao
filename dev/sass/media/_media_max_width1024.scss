@@ -239,21 +239,29 @@ section.first-screen {
 
 .about-row {
     flex-direction: column;
+    // text-align: center;
 
- 
+    .information {
+        text-align: justify;
+    }
 }
 
 .about-decoration {
-    margin-top: 35px;
-    justify-content: center;
+    margin: 0;
     img {
-       justify-content: baseline;
+       display: block;
+       margin: 0 auto;
+       max-width: 100%;
+       
     }
 }
 
 .question-form {
     margin-top: 28px;
     width: 100%;
+    input {
+        max-width: 100px;
+    }
 }
 
 .registration-row-1:nth-child(2) {
@@ -272,8 +280,3 @@ section.first-screen {
 }
 }
 
-// delivery section
-
-.slider-template {
-    gap: 12px;
-}
