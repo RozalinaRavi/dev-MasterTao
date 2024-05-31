@@ -77,7 +77,11 @@
   input {
     min-width: 310px;
     margin-bottom: 14px;
+    border-radius: 10px;
+    padding: 16px 19px;
+    width: 100%;
   }
+
 
    input:last-of-type {
     min-height: 70px;

@@ -70,25 +70,25 @@ $('.slider-template').slick({
   addParentClass(formBtns, '.col', 'mobile-center')
 
   
-  function mobileOnlySlider() {
-    $(document).ready(function(){
-        $('.slider-advantages').slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-                responsive: [{
-                    breakpoint: 568,
-                    settings: {
-                        slidesToShow: 1,
-                        settings:"unslick"
-                }
-            }]
-        });
-    });
-}
-
-if(window.innerWidth < 768) {
-  mobileOnlySlider();
-}
+//  function mobileOnlySlider() {
+//    $(document).ready(function(){
+//        $('.slider-advantages').slick({
+//            slidesToShow: 2,
+//            slidesToScroll: 1,
+//            arrows: false,
+//            dots: true,
+//                responsive: [{
+//                    breakpoint: 568,
+//                    settings: {
+//                        slidesToShow: 1,
+//                        settings:"unslick"
+//                }
+//            }]
+//        });
+//    });
+//}
+//
+//if(window.innerWidth < 768) {
+//  mobileOnlySlider();
+//}
 

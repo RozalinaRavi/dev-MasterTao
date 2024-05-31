@@ -1,3 +1,17 @@
 @media screen and (max-width: 767px) {
-
+    .registration-img {
+        img {
+            max-width: 100%;
+    }
+    }
+ .registration {
+    .template-title, .template-subtitle {
+        max-width: 100px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .template-title {
+      font-size: 10px;
+    }
+ }
 }
