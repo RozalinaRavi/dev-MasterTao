@@ -373,12 +373,16 @@ ul {
 }
 
 
-
-
-
 ul.slick-dots {
 	padding: 0;
 	margin: 0;
+
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
 
 	> li {
 		margin: 0 13px;
@@ -395,6 +399,17 @@ ul.slick-dots {
 			}
 		}
 	}
+
+
+	.slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 43px;
+        display: flex;
+        justify-content: center;
+       
+    }
 
 	button {
 		font-size: 0;
