@@ -35,4 +35,20 @@
     .header-list-link {
         padding: 16px 7px 10px;
     }
+
+    .registration-row-1:nth-child(2) {
+        flex-direction: column-reverse;
+     }
+     .registration-row {
+        justify-content: center;
+     }
+     .registration-row-2 {
+         flex-direction: column;
+     }
+
+     .template-title {
+        h2 {
+            text-align: center;
+        }
+     }
 }

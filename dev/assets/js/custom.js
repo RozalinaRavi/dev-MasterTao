@@ -70,25 +70,35 @@ $('.slider-template').slick({
   addParentClass(formBtns, '.col', 'mobile-center')
 
   
-//  function mobileOnlySlider() {
-//    $(document).ready(function(){
-//        $('.slider-advantages').slick({
-//            slidesToShow: 2,
-//            slidesToScroll: 1,
-//            arrows: false,
-//            dots: true,
-//                responsive: [{
-//                    breakpoint: 568,
-//                    settings: {
-//                        slidesToShow: 1,
-//                        settings:"unslick"
-//                }
-//            }]
-//        });
-//    });
-//}
-//
-//if(window.innerWidth < 768) {
-//  mobileOnlySlider();
-//}
+
+
+
+
+mobileOnlySlider(".slider-advantages", true, false, 1024);
+
+function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+  const slider = $($slidername);
+  const settings = {
+    mobileFirst: true,
+    dots: $dots,
+    arrows: $arrows,
+    responsive: [
+      {
+        breakpoint: $breakpoint,
+        settings: "unslick"
+      }
+    ]
+  };
+
+  slider.slick(settings);
+
+  $(window).on("resize", function () {
+    if ($(window).width() > $breakpoint) {
+      return;
+    }
+    if (!slider.hasClass("slick-initialized")) {
+      return slider.slick(settings);
+    }
+  });
+} 
 

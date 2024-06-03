@@ -3,13 +3,25 @@
     font-size: 24px;
     text-align: center;
 }
-.template-title {
 
-    h2:after {
-    display: none;
-}
-}
 .registration-row {
     display: flex;
-    gap: 57px;
+    justify-content: space-between;  
+}
+
+.registration-row-1 {
+  gap: 57px;
+    // .registration-img {
+        // margin-top: -23px;
+    // }
+}
+.registration-row-2 {
+    gap: 45px;
+    // .registration-img {
+        // margin-top: -23px;
+        // margin-left: -32px;
+    // }
+}
+.registration-descr .btn {
+    margin-top: 57px;
 }
