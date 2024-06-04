@@ -1,3 +1,21 @@
+.template-title {  
+         
+    &.col-lg-7 {
+        margin-bottom: 80px;
+        text-align: center;
+        
+        &:after {
+            display: inline-block;
+        }
+
+        h2 {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
 .template-subtitle {
     font-weight: 400;
     font-size: 24px;
@@ -12,17 +30,28 @@
 .registration-row-1 {
   
    gap: 57px;
-    // .registration-img {
-        // margin-top: -23px;
+   .registration-descr {
+    margin-bottom: 16px;
+   }
+    // .registration-img img {
+        // margin-bottom: 1px;
     // }
 }
 .registration-row-2 {
     gap: 45px;
-    // .registration-img {
-        // margin-top: -23px;
-        // margin-left: -32px;
-    // }
+    .registration-descr {
+        margin-top: 23px;
+    }
 }
-.registration-descr .btn {
-    margin-top: 57px;
+.registration-descr {
+    
+    p {
+        margin-bottom: 30px;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 157%;
+   }
+    .btn {
+        margin-top: 16px;
+    }
 }

@@ -6,7 +6,8 @@
     margin-bottom: 30px;
     border: 1px solid $bg-secondary;
     border-radius: 10px;
-    max-width: 716px;
+
+    min-width: 716px;  // new
     height: 100%;
     background: transparent;
   }

@@ -9,8 +9,6 @@
 
 
 
-
-
 @media screen and (max-width: 1355px) {
     .first-screen {
         .container {
@@ -51,4 +49,15 @@
             text-align: center;
         }
      }
+
+     // Section "Questions"
+
+.accordion .accordion-item {
+    min-width: unset;
+}
+
+.footer .container {
+    margin: 0;
+}
+
 }

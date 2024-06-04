@@ -1,3 +1,28 @@
+.about {
+   
+    .template-title {
+        &.col-lg-7 {
+            text-align: left;
+
+            &:after {
+                display: none;
+            }
+    
+            h2 {
+               
+                &:after {
+                    display: block
+                }
+            }
+        }
+    }
+    
+}
+
+.about .container{
+    justify-content: flex-start;
+}
+
 .about-row {
     display: flex;
     gap: 35px;
@@ -12,3 +37,10 @@
         }
     
 } 
+
+p {
+    margin-bottom: 29px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 157%;
+}
