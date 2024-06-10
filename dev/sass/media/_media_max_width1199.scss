@@ -3,6 +3,17 @@
         max-width: 780px;
         margin: 0 auto;
     }
+
+    // Section "About-company"
+
+.about {
+    .template-title {
+        h2:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
 }
 
 
@@ -21,6 +32,18 @@
             max-width: 100%;
         }
     }
+
+    // Section "Questions"
+
+.question-form {
+    margin-top: 28px;
+    min-width: 100%;
+   
+    input {
+        min-width: unset;
+    }
+}
+
 }
 
 
