@@ -4,16 +4,27 @@
         margin: 0 auto;
     }
 
-    // Section "About-company"
 
-.about {
-    .template-title {
-        h2:after {
-            margin-left: auto;
-            margin-right: auto;
+    .about {
+   
+        .template-title {
+            &.col-lg-7 {
+                text-align: center;
+    
+                &:after {
+                    display: block;
+                }
+        
+                h2 {
+                   
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
         }
+        
     }
-}
 }
 
 
