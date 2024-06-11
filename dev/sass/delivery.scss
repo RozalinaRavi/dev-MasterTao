@@ -1,3 +1,22 @@
+.delivery {
+    .template-title {
+        margin-bottom: 27px;
+    }
+}
+
+.template-title {
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 53.5%;
+		top: calc(100% - 2px);
+		transform: translate(-50%, 0);
+		width: 85px;
+		height: 2px;
+		background-color: $color-secondary;
+	}
+}
 .template-card {
     background-color: $bg-secondary;
     border-radius: 20px;
@@ -23,7 +42,8 @@
 
 .slider-template {
     .template-card {
-        margin: 0 auto;
+        margin: 40px auto;
+        // margin: 0 auto;
         margin-bottom: 32px;
     }
     
@@ -59,18 +79,24 @@
 .template-card-options {
     display: flex;
     justify-content: center;
-    gap: 36px;
-    margin-bottom: 8px;
+    gap: 31px;
+    margin-bottom: 6px;
 }
 .card-option {
     display: flex;
-    gap: 8px;
+    gap: 9px;
+}
+.card-option-weight {
+    img {
+        margin-right: 0;
+    }
 }
 .template-card-price {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-bottom: 22px;
+    margin-left: 5px;
+    margin-bottom: 10px;
 
     span {
         color: #a3a3a3;
@@ -82,6 +108,7 @@
 
     b {
         font-size: 45px;
+        margin-left: 8px;
     }
 }
 .template-card-row {
