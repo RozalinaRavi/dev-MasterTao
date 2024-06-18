@@ -2,14 +2,16 @@
   .template-title {
     margin-left: auto;
     margin-right: auto;
-    &.col-lg-7 {
-      margin-bottom: 47px;
-      text-align: left;
+    margin-bottom: 47px;
+    text-align: center;
+
       &::after {
-        left: 43.2%;
+        left: 50%;
 		    top: calc(100% - 3px);
       }
   }
+  .row {
+    justify-content: space-between;
   }
 }
 .questions .accordion-header {
@@ -59,7 +61,7 @@
     box-shadow: none;
     border: none;
     border-radius: 10px 10px 0 0;
-    padding-bottom: 2px;
+    padding-bottom: 10px;
     margin-bottom: 0;
   }
 

@@ -1,5 +1,16 @@
 @media screen and (max-width: 575px) {
-   
+     .calculation {
+        .container .template-title {
+            h2::after {
+                display: none;
+             }
+    
+             &::after {
+                display: inline-block;
+            }
+         }
+     }
+  
 }
 
 

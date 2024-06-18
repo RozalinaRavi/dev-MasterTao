@@ -1,6 +1,7 @@
 .delivery {
+    margin-bottom: 50px;
     .template-title {
-        margin-bottom: 27px;
+        margin-bottom: 20px;
     }
 }
 
@@ -9,7 +10,7 @@
 	&::after {
 		content: "";
 		position: absolute;
-		left: 53.5%;
+		left: 50%;
 		top: calc(100% - 2px);
 		transform: translate(-50%, 0);
 		width: 85px;

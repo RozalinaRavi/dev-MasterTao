@@ -44,7 +44,7 @@
         }
   
     .header {
-        padding: 18px 0 39px;
+        padding: 18px 0 11px;
 
         &::before {
             content: "";
@@ -60,7 +60,7 @@
     
 
     .header-logo-img {
-        max-width: 100px;
+        max-width: 130px;
     }
     .header-nav {
         flex-direction: column; 
@@ -237,6 +237,10 @@ section.first-screen {
 
 .services {
     margin-top: 60px;
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
     .slider-template .template-card .img-box img {
         height: 100%;
@@ -244,7 +248,9 @@ section.first-screen {
     }
 }
 // Section "About"
-
+.about {
+    margin-bottom: 60px;
+}
 .about-row {
     flex-direction: column;
    
@@ -260,6 +266,15 @@ section.first-screen {
        margin: 0 auto;
        max-width: 100%;
        
+    }
+}
+
+//  Section "Questions"
+
+.questions {
+    .question-form {
+     padding-left: 20px;
+     padding-right: 20px;
     }
 }
 //  Section "Registration"
@@ -279,6 +294,7 @@ section.first-screen {
     text-align: justify;
 
     .btn {
+        height: 68px;
         margin-top: 29px;
         padding: 9px 5px;
         margin: 0 auto;
