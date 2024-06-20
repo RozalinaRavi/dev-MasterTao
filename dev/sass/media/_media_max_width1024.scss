@@ -316,11 +316,16 @@ section.first-screen {
  .footer {
     justify-content: center;
  }
+ .footer-row {
+    justify-content: center;
+    text-align: center;
+}
  .footer .main-info {
      justify-content: center;
      text-align: center;
      margin-bottom: 44px;
      position: relative;
+     margin-right: 0;
  }
 }
 // Декоративная полоска для футера
