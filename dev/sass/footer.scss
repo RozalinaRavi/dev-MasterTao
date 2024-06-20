@@ -1,5 +1,6 @@
 .footer .container {
-    margin-left: 278px;
+    margin-right: auto;
+    margin-left: auto;
 }
 footer .footer-logo-img {
     margin-bottom: 28px;
@@ -8,7 +9,7 @@ footer .footer-logo-img {
 .main-info {
     font-size: 14px;
     line-height: 162%;
-    margin: 0 auto;
+    margin-right: 80px;
 }
 .main-info__list {
    padding: 0;
@@ -26,7 +27,6 @@ footer .footer-logo-img {
 }
 .footer-row {
     display: flex;
-    justify-content: center;
 }
 .footer-nav__list {
     padding: 0;
@@ -48,7 +48,7 @@ footer .footer-logo-img {
          width: 1140px;
          height: 2px;
          top: -40px;
-         left: 110px;
+         left: 17px;
          background-color: $color-primary;
 }
 }
